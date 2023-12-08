@@ -73,19 +73,20 @@ ScrollTrigger.refresh();
 smoothScroll();
 function page2Anim()
 {
-    // gsap.from(".elem1 h1",{
-    //     y:120,
-    //     stagger:0.2,
-    //     duration:1,
-    //     scrollTrigger:{
-    //         trigger:"#page2",
-    //         scroller:"#main",
-    //         start:"top 47%",
-    //         end:"top 46%",
-    //         markers:true,
-    //         scrurb:2
-    //     }
-    // }) 
+    gsap.from(".elem1 h1",{
+        y:30,
+        stagger:0.2,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:"#page2",
+            scroller:"#main",
+            start:"top 47%",
+            end:"top 46%",
+            // markers:true,
+            scrurb:2
+        }
+    }) 
     gsap.from("#page2 #center h1 span", {
         y: 120,
         stagger: 0.3, // Adjust the delay between each span
